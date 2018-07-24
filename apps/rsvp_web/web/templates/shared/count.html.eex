@@ -1,0 +1,3 @@
+<h3>
+  Total Count: <%= Enum.count @list %>
+</h3>

@@ -1,0 +1,16 @@
+<h1>
+  <%= @event.title %>,
+    <small>
+      <%= @event.location %>
+    </small>
+</h1>
+
+<h3>
+  Date:
+  <%= format_date @event.date %>
+</h3>
+
+<h3>
+  Description:
+  <%= @event.description %>
+</h3>
