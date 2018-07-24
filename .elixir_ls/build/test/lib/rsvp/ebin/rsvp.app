@@ -1,0 +1,10 @@
+{application,rsvp,
+             [{applications,[kernel,stdlib,elixir,logger,postgrex,ecto]},
+              {description,"rsvp"},
+              {modules,['Elixir.Rsvp','Elixir.Rsvp.Application',
+                        'Elixir.Rsvp.EventQueries','Elixir.Rsvp.Events',
+                        'Elixir.Rsvp.Repo']},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {extra_applications,[logger,postgrex,ecto]},
+              {mod,{'Elixir.Rsvp.Application',[]}}]}.
