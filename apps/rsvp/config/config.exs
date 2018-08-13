@@ -10,4 +10,4 @@ config :rsvp, Rsvp.Repo,
 
 config :rsvp, ecto_repos: [Rsvp.Repo]
 
-import_config "#{Mix.env}.exs"
+# import_config "#{Mix.env}.exs"

@@ -16,6 +16,6 @@ defmodule RsvpWeb.EventChannel do
       "quantity" => event.quantity_available
     }
 
-    RsvpWeb.Endpoint.broadcast("event:1", "update_quantity", payload)
+    RsvpWeb.Endpoint.broadcast("event:#{event.id}", "update_quantity", payload)
   end
 end
