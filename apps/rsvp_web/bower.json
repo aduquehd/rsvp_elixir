@@ -1,0 +1,21 @@
+{
+  "name": "rsvp_web",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Andres Duque <saduqz@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/saduqz/rsvp_elixir",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

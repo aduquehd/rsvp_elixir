@@ -1,5 +1,6 @@
 {application,rsvp,
-             [{applications,[kernel,stdlib,elixir,logger,postgrex,ecto]},
+             [{applications,[kernel,stdlib,elixir,logger,postgrex,ecto,
+                             phoenix_ecto]},
               {description,"rsvp"},
               {modules,['Elixir.Rsvp','Elixir.Rsvp.Application',
                         'Elixir.Rsvp.EventQueries','Elixir.Rsvp.Events',

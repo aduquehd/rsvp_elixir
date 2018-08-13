@@ -4,7 +4,7 @@ defmodule Rsvp.EventQueries do
   alias Rsvp.{Repo, Events}
 
   def any do
-    Repo.one(from e in Events, select: count(e.id) != 0)
+    Repo.one(from(e in Events, select: count(e.id) != 0))
   end
 
   def get_all do
@@ -26,7 +26,19 @@ defmodule Rsvp.EventQueries do
   end
 
   def create(event) do
-    Repo.insert!(event)
+    Repo.insert(event)
+  end
+
+  def decrease_quantity(id, quantity) do
+    event = Repo.get!(Events, id)
+
+    changes =
+      Ecto.Changeset.change(
+        event,
+        quantity_available: event.quantity_available - String.to_integer(quantity)
+      )
+
+    Repo.update(changes)
   end
 end
 
